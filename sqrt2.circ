@@ -561,6 +561,9 @@
     <comp lib="0" loc="(3210,1140)" name="Probe">
       <a name="appearance" val="NewPins"/>
     </comp>
+    <comp lib="0" loc="(3230,860)" name="Probe">
+      <a name="appearance" val="NewPins"/>
+    </comp>
     <comp lib="0" loc="(3300,900)" name="Transmission Gate">
       <a name="width" val="5"/>
     </comp>
@@ -1147,9 +1150,12 @@
     <wire from="(3200,910)" to="(3220,910)"/>
     <wire from="(3210,1140)" to="(3250,1140)"/>
     <wire from="(3220,900)" to="(3220,910)"/>
-    <wire from="(3220,900)" to="(3260,900)"/>
+    <wire from="(3220,900)" to="(3250,900)"/>
+    <wire from="(3230,860)" to="(3250,860)"/>
     <wire from="(3250,1050)" to="(3250,1140)"/>
     <wire from="(3250,1050)" to="(3360,1050)"/>
+    <wire from="(3250,860)" to="(3250,900)"/>
+    <wire from="(3250,900)" to="(3260,900)"/>
     <wire from="(3280,860)" to="(3280,880)"/>
     <wire from="(3280,860)" to="(3320,860)"/>
     <wire from="(3280,920)" to="(3280,930)"/>
@@ -6056,6 +6062,9 @@
     <comp lib="0" loc="(2130,860)" name="Constant">
       <a name="width" val="32"/>
     </comp>
+    <comp lib="0" loc="(2130,990)" name="Probe">
+      <a name="appearance" val="NewPins"/>
+    </comp>
     <comp lib="0" loc="(2140,710)" name="Probe">
       <a name="appearance" val="NewPins"/>
     </comp>
@@ -6347,6 +6356,7 @@
     <comp lib="1" loc="(1620,450)" name="NOT Gate">
       <a name="facing" val="north"/>
     </comp>
+    <comp lib="1" loc="(2810,770)" name="NOT Gate"/>
     <comp lib="1" loc="(2920,1070)" name="NOT Gate">
       <a name="facing" val="north"/>
     </comp>
@@ -6385,7 +6395,7 @@
     <comp loc="(2440,770)" name="SUM32"/>
     <comp loc="(2650,1170)" name="SHIFT_MAX10BIT"/>
     <comp loc="(2730,920)" name="SHIFT_MAX10BIT"/>
-    <comp loc="(2770,770)" name="IF_y_less_x"/>
+    <comp loc="(2770,770)" name="IF_y_more_x"/>
     <comp loc="(2780,1330)" name="MINUS32"/>
     <comp loc="(2880,1170)" name="SUM32"/>
     <comp loc="(610,890)" name="DTrigger32"/>
@@ -6486,9 +6496,12 @@
     <wire from="(1990,1090)" to="(2030,1090)"/>
     <wire from="(2000,1050)" to="(2050,1050)"/>
     <wire from="(2030,1110)" to="(2030,1130)"/>
-    <wire from="(2070,1030)" to="(2350,1030)"/>
+    <wire from="(2070,1030)" to="(2160,1030)"/>
     <wire from="(2130,860)" to="(2190,860)"/>
+    <wire from="(2130,990)" to="(2160,990)"/>
     <wire from="(2140,710)" to="(2190,710)"/>
+    <wire from="(2160,1030)" to="(2350,1030)"/>
+    <wire from="(2160,990)" to="(2160,1030)"/>
     <wire from="(2180,210)" to="(2180,230)"/>
     <wire from="(2180,230)" to="(2190,230)"/>
     <wire from="(2180,770)" to="(2190,770)"/>
@@ -6530,8 +6543,9 @@
     <wire from="(2650,1190)" to="(2650,1250)"/>
     <wire from="(2650,1190)" to="(2660,1190)"/>
     <wire from="(2730,920)" to="(2900,920)"/>
-    <wire from="(2770,770)" to="(2920,770)"/>
+    <wire from="(2770,770)" to="(2780,770)"/>
     <wire from="(2780,1330)" to="(2860,1330)"/>
+    <wire from="(2810,770)" to="(2920,770)"/>
     <wire from="(2860,1310)" to="(2860,1330)"/>
     <wire from="(2860,1310)" to="(2900,1310)"/>
     <wire from="(2880,1170)" to="(2900,1170)"/>
