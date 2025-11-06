@@ -5031,7 +5031,7 @@
       <a name="appearance" val="NewPins"/>
     </comp>
     <comp lib="0" loc="(660,400)" name="Constant">
-      <a name="value" val="0x6"/>
+      <a name="value" val="0x5"/>
       <a name="width" val="32"/>
     </comp>
     <comp lib="0" loc="(700,810)" name="Tunnel">
@@ -5092,7 +5092,7 @@
       <a name="width" val="32"/>
     </comp>
     <comp lib="0" loc="(90,290)" name="Constant">
-      <a name="value" val="0x9"/>
+      <a name="value" val="0xa"/>
       <a name="width" val="32"/>
     </comp>
     <comp lib="0" loc="(900,740)" name="Probe">
