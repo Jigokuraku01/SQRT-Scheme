@@ -48,13 +48,13 @@ module sqrt2 (
   function void do_tick();
     begin
       if (iter_sqrt_iter_cnt < 11) begin
-        remainder = {remainder[29:0], mantissa_big[21:20]};
-        tmp_root = (root << 2) | 2'b01;
+        remainder = (remainder[29:0] << 2) + mantissa_big[21:20];
+        tmp_root = (root << 2) + 1;
         if (tmp_root <= remainder) begin
           remainder = remainder - tmp_root;
-          root = root << 1 | 1'b1;
+          root = (root << 1) + 1'b1;
         end else begin
-          root = root << 1 | 1'b0;
+          root = (root << 1);
         end
         ans_mantissa = root[9:0];
 
@@ -195,6 +195,7 @@ module sqrt2 (
             (ans_sign && (ans_exponent != 0 || ans_mantissa != 0));
             isninf_reg = 0;
             ispinf_reg = (ans_exponent == 5'h1F && ans_mantissa == 0 && !ans_sign);
+            if(isnan_reg) ans_mantissa[9] = 1;
           end else begin
             inp_mantissa                 = inp_data[9:0];
             inp_exp                      = inp_data[14:10];
